@@ -20,5 +20,7 @@ const imageRoute = require('./routes/ImageRoutes')
 
 app.use('/image', imageRoute)
 
-
-app.listen(5000)
+const port = 5000
+app.listen(port, () => {
+    console.log(`App rodando na porta ${port}`)
+})
