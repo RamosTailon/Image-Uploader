@@ -32,6 +32,7 @@ module.exports = class ImageController {
 
         try {
             await imageSave.save()
+            //RENDER EM AMBIENTE DE PRODUÇÃO
             res.status(201).json({ message: "imagem(s) salva!", imageSave })
         } catch (err) {
             res.status(500).json({ message: err })

@@ -18,6 +18,7 @@ app.use(express.static('public'))
 //ROUTE
 const imageRoute = require('./routes/ImageRoutes')
 
+//MIDDLEWARE DE ROTA
 app.use('/image', imageRoute)
 
 const port = 5000
