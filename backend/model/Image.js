@@ -14,7 +14,8 @@ const Image = mongoose.model(
             required: true
         },
         rating: {
-            type: Number
+            type: Number,
+            required: true
         }
     }, { timestamps: true })
 )

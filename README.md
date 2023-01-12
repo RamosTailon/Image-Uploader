@@ -30,10 +30,11 @@ to start the project it is **necessary** to have installed _node.js, npm, yarn_ 
 
 ## STEPS PROJECT:
 
-- [ ] Create connection with the bank.
-- [ ] Configure initial routes.
-- [ ] Configure multer.
-- [ ] Return endpoints from the API.
+- [x] Create connection with the bank.
+- [x] Configure initial routes.
+- [x] Configure multer.
+- [x] Return endpoints from the API.
+- [ ] Create a CRUD function. 
 - [ ] Create home interface.
 - [ ] Create SPA routes.
 - [ ] Function add image.
