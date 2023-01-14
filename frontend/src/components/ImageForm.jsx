@@ -14,7 +14,7 @@ const ImageForm = ({ handleSubmit, imageData, btnText }) => {
     const [preview, setPreview] = useState([]);
 
     function onFileChange(e) {
-        setPreview(e.target.files)
+        setPreview(Array.from(e.target.files))
         setImages({ ...images, images: [...e.target.files] })
         console.log([...e.target.files])
     }
@@ -27,10 +27,6 @@ const ImageForm = ({ handleSubmit, imageData, btnText }) => {
         e.preventDefault()
         handleSubmit(images)
     }
-
-    useEffect(() => {
-        console.log(preview)
-    }, []);
 
     return (
         <section>

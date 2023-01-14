@@ -5,13 +5,13 @@ const Navbar = () => {
     return (
         <nav className={styles.navbar}>
             <div className={styles.logoImage}>
-                <img src="../../public/image_uploader.svg" alt="logo icon" />
+                <img src="/image_uploader.svg" alt="logo icon" />
                 <p>Image Uploader</p>
             </div>
 
             <ul className={styles.lists}>
                 <li><Link to='/'>Home</Link></li>
-                <li><Link to='/add'>Editar</Link></li>
+                <li><Link to='/add'>Adicionar</Link></li>
             </ul>
 
         </nav>
