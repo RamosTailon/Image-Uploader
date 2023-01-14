@@ -1,0 +1,21 @@
+.InputModel {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.7em;
+}
+
+.InputModel label {
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.InputModel input {
+    padding: 0.7em;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.InputModel input::placeholder {
+    color: #7b7b7b;
+}
