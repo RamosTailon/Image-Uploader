@@ -4,16 +4,38 @@
     background-image: linear-gradient(#14c971ff, #449b4fff);
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
-img {
-    margin-left: 3em;
+.logoImage {
+    display: flex;
 }
 
-.navbar p {
+
+
+.logoImage p {
     margin-left: 1em;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 1em;
     color: #111;
+}
+
+.lists {
+    display: flex;
+}
+
+
+.lists a,
+.lists li {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 15px;
+    font-weight: 700;
+    color: #fff;
+    transition: .4s;
+}
+
+.lists a:hover {
+    color: #e8eb40;
 }

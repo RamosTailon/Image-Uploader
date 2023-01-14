@@ -1,10 +1,19 @@
 import styles from './Navbar.module.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <nav className={styles.navbar}>
-            <img src="../../public/image_uploader.svg" alt="logo icon" />
-            <p>Image Uploader</p>
+            <div className={styles.logoImage}>
+                <img src="../../public/image_uploader.svg" alt="logo icon" />
+                <p>Image Uploader</p>
+            </div>
+
+            <ul className={styles.lists}>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/add'>Editar</Link></li>
+            </ul>
+
         </nav>
     )
 }
