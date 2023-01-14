@@ -1,0 +1,19 @@
+.navbar {
+    width: 100vw;
+    height: 15vh;
+    background-image: linear-gradient(#14c971ff, #449b4fff);
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-left: 3em;
+}
+
+.navbar p {
+    margin-left: 1em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #111;
+}

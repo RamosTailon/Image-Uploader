@@ -2,9 +2,10 @@ import styles from './Navbar.module.css'
 
 const Navbar = () => {
     return (
-        <div>
-            <h2>Navbar</h2>
-        </div>
+        <nav className={styles.navbar}>
+            <img src="../../public/image_uploader.svg" alt="logo icon" />
+            <p>Image Uploader</p>
+        </nav>
     )
 }
 

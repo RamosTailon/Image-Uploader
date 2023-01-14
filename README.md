@@ -1,6 +1,8 @@
 # Image Upload
 project that saves the image in the database. Through this project it is possible to use the browser as an interface to save images in the database and show all the saved images.
 
+![Preview do App](./preview.png)
+
 Technologies Used
 
 ## Backend

@@ -1,0 +1,15 @@
+.footer {
+    background-color: #2bb25eff;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+}
