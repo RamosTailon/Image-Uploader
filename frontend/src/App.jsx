@@ -5,6 +5,7 @@ import './App.css'
 import Container from './layouts/Container'
 import Navbar from './layouts/Navbar'
 import Footer from './layouts/Footer'
+import Message from './layouts/Message'
 
 //PAGES
 import Home from './pages/Home'
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <Message />
         <Container>
           <Routes>
             <Route path='/' element={<Home />} />

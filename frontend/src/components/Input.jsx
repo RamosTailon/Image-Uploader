@@ -5,8 +5,10 @@ const Input = ({
     type,
     name,
     placeholder,
-    handleChange,
+    handleOnChange,
     value,
+    min,
+    max,
     multiple
 }) => {
     return (
@@ -17,9 +19,11 @@ const Input = ({
                 name={name}
                 id={name}
                 placeholder={placeholder}
-                onChange={handleChange}
+                onChange={handleOnChange}
                 value={value}
-            // multiple={multiple}
+                min={min}
+                max={max}
+                {...(multiple ? { multiple } : '')}
             />
         </div>
     )
