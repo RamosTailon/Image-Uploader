@@ -3,3 +3,34 @@
     font-family: sans-serif;
     font-weight: 600;
 }
+
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#editBtn {
+    background-color: #3d7f2e;
+}
+
+#editBtn:hover {
+    background-color: #369820;
+}
+
+#deleteBtn {
+    background-color: #982525;
+}
+
+#deleteBtn:hover {
+    background-color: #da3939;
+}

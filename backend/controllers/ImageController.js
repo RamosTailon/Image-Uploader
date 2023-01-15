@@ -91,7 +91,7 @@ module.exports = class ImageController {
 
 		await Image.findByIdAndRemove(id)
 
-		res.status(200).json({ message: "Imagens removido com sucesso!" })
+		res.status(200).json({ message: "Imagens removidas com sucesso!" })
 		//regra de negócio para deletar a imagem do provider; seja em nuvem ou no próprio computador
 	}
 
@@ -140,6 +140,6 @@ module.exports = class ImageController {
 		}
 
 		await Image.findByIdAndUpdate(id, updateData)
-		res.status(200).json({ message: 'Imagem atualizada com sucesso!' })
+		res.status(200).json({ message: 'Arquivo atualizada com sucesso!' })
 	}
 }

@@ -42,7 +42,7 @@ const ImageForm = ({ handleSubmit, imageData, btnText }) => {
                     : images.images &&
                     images.images.map((image, index) => (
                         <img
-                            src={`${process.env.REACT_APP_API}/img/${image}`}
+                            src={`${import.meta.env.VITE_REACT_APP_API}/img/${image}`}
                             alt={images.name}
                             key={`${images.name}+${index}`}
                         />

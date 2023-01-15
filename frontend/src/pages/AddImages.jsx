@@ -56,7 +56,7 @@ const AddImages = () => {
     }
 
     return (
-        <div>
+        <div className={styles.container_form}>
             <h1>Adicionar imagens</h1>
             <ImageForm handleSubmit={imagesUp} btnText='Adicionar' />
         </div>

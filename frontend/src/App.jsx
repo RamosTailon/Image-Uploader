@@ -13,6 +13,7 @@ import Message from './components/Message'
 import Home from './pages/Home'
 import AddImages from './pages/AddImages'
 import Details from './pages/Details'
+import Edit from './pages/Edit'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/add' element={<AddImages />} />
             <Route path='/details/:id' element={<Details />} />
+            <Route path='/edit/:id' element={<Edit />} />
           </Routes>
         </Container>
         <Footer />
