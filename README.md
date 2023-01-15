@@ -37,8 +37,9 @@ to start the project it is **necessary** to have installed _node.js, npm, yarn_ 
 - [x] Configure multer.
 - [x] Return endpoints from the API.
 - [x] Create a CRUD function. 
-- [ ] Create home interface.
-- [ ] Create SPA routes.
-- [ ] Function add image.
+- [x] Create home interface.
+- [x] Create SPA routes.
+- [x] Function add image.
 - [ ] Function Show other images.
+- [ ] Show details image of ID.
 - [ ] Image CRUD edit function.

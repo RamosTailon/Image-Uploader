@@ -10,7 +10,7 @@ const Navbar = () => {
             </div>
 
             <ul className={styles.lists}>
-                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/'>Vitrine</Link></li>
                 <li><Link to='/add'>Adicionar</Link></li>
             </ul>
 

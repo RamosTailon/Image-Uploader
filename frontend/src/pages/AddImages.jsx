@@ -57,7 +57,7 @@ const AddImages = () => {
 
     return (
         <div>
-            <h1>AddImages</h1>
+            <h1>Adicionar imagens</h1>
             <ImageForm handleSubmit={imagesUp} btnText='Adicionar' />
         </div>
     )

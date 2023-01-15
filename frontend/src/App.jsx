@@ -5,11 +5,14 @@ import './App.css'
 import Container from './layouts/Container'
 import Navbar from './layouts/Navbar'
 import Footer from './layouts/Footer'
-import Message from './layouts/Message'
+
+//COMPONENTS
+import Message from './components/Message'
 
 //PAGES
 import Home from './pages/Home'
 import AddImages from './pages/AddImages'
+import Details from './pages/Details'
 
 function App() {
 
@@ -23,6 +26,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/add' element={<AddImages />} />
+            <Route path='/details/:id' element={<Details />} />
           </Routes>
         </Container>
         <Footer />

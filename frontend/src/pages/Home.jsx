@@ -26,13 +26,22 @@ const Home = () => {
         <section className={styles.homes}>
             {images.length > 0 &&
                 images.map((image) => (
-                    <div key={image._id}>
+                    <div key={image._id} className={styles.single}>
                         <img
                             src={`${import.meta.env.VITE_REACT_APP_API}/img/${image.images[0]}`}
                             alt={images.name}
                         />
-                        <span>{image.name}</span>
-                        <span>{image.rating}</span>
+                        <div className={styles.info}>
+                            <Link to={`/details/${image._id}`}>{image.name}</Link>
+                            <ul className={styles.rating}>
+                                <li className={`${styles.start_icon} ${styles.active}`} data='1'></li>
+                                <li className={`${styles.start_icon} `} data='2'></li>
+                                <li className={`${styles.start_icon} `} data='3'></li>
+                                <li className={`${styles.start_icon} `} data='4'></li>
+                                <li className={`${styles.start_icon} `} data='5'></li>
+                            </ul>
+
+                        </div>
                     </div>
                 ))
             }
