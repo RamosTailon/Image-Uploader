@@ -42,18 +42,20 @@ const Edit = () => {
 			}
 		})
 
-		const data = api.patch(`/image/${picture._id}`, formData, {
+		const data = await api.patch(`/image/${picture._id}`, formData, {
 			headers: {
 				'Content-Type': 'multipart/form-data'
 			}
 		})
 			.then((response) => {
+
 				return response.data
 			})
 			.catch((err) => {
 				msgType = 'error';
 				return err.response.data
 			})
+
 		setFlashMessage(data.message, msgType)
 
 		if (msgType !== 'error') {

@@ -30,7 +30,7 @@ const ImageForm = ({ handleSubmit, imageData, btnText }) => {
 
     return (
         <section>
-            <div>
+            <div className={styles.carousel}>
                 {preview.length > 0
                     ? preview.map((image, index) => (
                         <img

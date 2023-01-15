@@ -14,6 +14,9 @@ app.use(cors({
 //PASTA ROOT 
 app.use(express.static('public'))
 
+//CONEXÃO COM DB
+require('./db/conn.js')
+
 
 //ROUTE
 const imageRoute = require('./routes/ImageRoutes')

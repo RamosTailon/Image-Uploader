@@ -1,6 +1,6 @@
 import styles from './Details.module.css'
 import { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate} from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 
 
 //API
@@ -60,9 +60,14 @@ const Details = () => {
 					< div className={styles.info}>
 						<p>Nome: {picture.name}</p>
 						<p>Classificação: {picture.rating} de 5</p>
-						<button
-							className={styles.btn}
-							id={styles.editBtn}><Link to={`/edit/${picture._id}`}>Editar</Link></button>
+						<Link to={`/edit/${picture._id}`}>
+							<button
+								className={styles.btn}
+								id={styles.editBtn}>
+								Editar
+							</button>
+						</Link>
+
 						<button
 							className={styles.btn}
 							id={styles.deleteBtn}

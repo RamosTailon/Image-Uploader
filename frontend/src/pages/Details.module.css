@@ -34,3 +34,14 @@
 #deleteBtn:hover {
     background-color: #da3939;
 }
+
+.image_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image_group img {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
