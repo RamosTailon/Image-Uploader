@@ -10,44 +10,45 @@ import useFlashMessage from '../hooks/useFlashMessage'
 
 const Home = () => {
 
-    const [images, setImages] = useState([]);
-    const { setFlashMessage } = useFlashMessage()
+	const [images, setImages] = useState([]);
+	const [stars, setStars] = useState();
+	const { setFlashMessage } = useFlashMessage()
 
-    useEffect(() => {
-        api.get('/image/all')
-            .then((response) => {
-                setImages(response.data.view)
-            })
-    }, [])
+	useEffect(() => {
+		api.get('/image/all')
+			.then((response) => {
+				setImages(response.data.view)
+			})
+	}, [])
 
 
 
-    return (
-        <section className={styles.homes}>
-            {images.length > 0 &&
-                images.map((image) => (
-                    <div key={image._id} className={styles.single}>
-                        <img
-                            src={`${import.meta.env.VITE_REACT_APP_API}/img/${image.images[0]}`}
-                            alt={images.name}
-                        />
-                        <div className={styles.info}>
-                            <Link to={`/details/${image._id}`}>{image.name}</Link>
-                            <ul className={styles.rating}>
-                                <li className={`${styles.start_icon} ${styles.active}`} data='1'></li>
-                                <li className={`${styles.start_icon} `} data='2'></li>
-                                <li className={`${styles.start_icon} `} data='3'></li>
-                                <li className={`${styles.start_icon} `} data='4'></li>
-                                <li className={`${styles.start_icon} `} data='5'></li>
-                            </ul>
+	return (
+		<section className={styles.homes}>
+			{images.length > 0 &&
+				images.map((image) => (
+					<div key={image._id} className={styles.single}>
+						<img
+							src={`${import.meta.env.VITE_REACT_APP_API}/img/${image.images[0]}`}
+							alt={images.name}
+						/>
+						<div className={styles.info}>
+							<Link to={`/details/${image._id}`}>{image.name}</Link>
+							<ul className={styles.rating}>
+								<li className={`${styles.star_icon} ${image.rating == 1 ? styles.active : ''}`}></li>
+								<li className={`${styles.star_icon} ${image.rating == 2 ? styles.active : ''}`}></li>
+								<li className={`${styles.star_icon} ${image.rating == 3 ? styles.active : ''}`}></li>
+								<li className={`${styles.star_icon} ${image.rating == 4 ? styles.active : ''}`}></li>
+								<li className={`${styles.star_icon} ${image.rating == 5 ? styles.active : ''}`}></li>
+							</ul>
 
-                        </div>
-                    </div>
-                ))
-            }
-            {images.length === 0 && <p>Não há imagens cadastradas</p>}
-        </section>
-    )
+						</div>
+					</div>
+				))
+			}
+			{images.length === 0 && <p>Não há imagens cadastradas</p>}
+		</section>
+	)
 }
 
 export default Home

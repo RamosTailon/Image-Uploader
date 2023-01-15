@@ -55,15 +55,15 @@
     margin-right: 5px;
 }
 
-.start_icon {
+.star_icon {
     color: #e4e64afd;
 }
 
-.start_icon::before {
+.star_icon::before {
     content: "\2605";
 }
 
-.start_icon.active~.start_icon::before {
-    content: "\2606";
 
+.star_icon.active~.star_icon::before {
+    content: "\2606";
 }
